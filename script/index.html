@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>ToDo List</h1>
+    <div class="filters">
+        <input type="text" id="search" placeholder="Search tasks" oninput="filterTasks()">
+        <select id="sort" onchange="sortTasks()">
+            <option value="dateCreated">Sort by Date Created</option>
+            <option value="deadline">Sort by Deadline</option>
+        </select>
+        <div id="tags-filter"></div>
+    </div>
+    <ul id="todo-list"></ul>
+    <button onclick="window.location.href='add.html'">Add Task</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
