@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.add-todo,
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.add-todo input,
+.add-todo textarea,
+.filters input,
+.filters select {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    border: 1px solid #070606;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    transition: border-color 0.3s;
+}
+
+.filters input:focus,
+.filters select:focus,
+.add-todo input:focus,
+.add-todo textarea:focus {
+    border-color: #90caf9;
+    outline: none;
+}
+
+#tags-filter {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.todo-item {
+    background: #f4f4f4;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+.todo-item h3,
+.todo-item p {
+    margin: 0;
+}
+
+.todo-item .tags {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+.todo-item .actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.todo-item .actions button {
+    padding: 5px;
+    font-size: 0.9em;
+}
+.near-deadline {
+    background-color: #ffdddd;
+}
+
+.green {
+    background-color: #ddffdd;
+}
+
+.yellow {
+    background-color: #ffffcc;
+}
+
+.red {
+    background-color: #ffcccc;
+}
