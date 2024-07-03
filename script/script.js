@@ -32,8 +32,6 @@ function getFormValues() {
     return { title, content, deadline, tags };
 }
 
-
-
 function addTodo() {
     const { title, content, deadline, tags } = getFormValues();
     if (title && deadline && content && tags) {

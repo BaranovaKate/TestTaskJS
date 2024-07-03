@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Task</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 <div class="container">
-    <h1>Add Task</h1>
+    <h1>Edit Task</h1>
     <div class="add-todo">
+        <input type="hidden" id="task-id">
         <input type="text" id="title" placeholder="Task Title" maxlength="50">
         <textarea id="content" placeholder="Task Content" maxlength="1000" rows="5" style="resize: none;"></textarea>
         <input type="date" id="deadline">
-        <input type="text" id="tags" placeholder="Tags (comma separated)" maxlength="50" >
-        <button onclick="addTodo()">Add Task</button>
+        <input type="text" id="tags" placeholder="Tags (separated with ',')" maxlength="50">
+        <button onclick="saveTodo()">Save Task</button>
     </div>
     <button onclick="window.location.href='index.html'">Back</button>
 </div>
-<script src="script.js"></script>
+<script src="../script/script.js"></script>
 </body>
 </html>
