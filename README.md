@@ -1,1 +1,3 @@
-This is my first JavaScript project
+ToDo Application
+
+В проекте реализованны CRUD операции над листом ToDo. А так же сортироввка по дате создания, по дедлайну. Поиск по тегам и по названию.
